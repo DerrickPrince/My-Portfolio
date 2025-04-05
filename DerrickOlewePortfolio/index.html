@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- AOS Library -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Derrick Olewe | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
     <button id="theme-toggle">Switch Theme</button>
-    <h1>Derrick Olewe</h1>
-    <h2>I’m <span id="typed-text"></span><span class="cursor">|</span></h2>
-    <p>"Helping others help themselves."</p>
+    <h1 data-aos="fade-down">Derrick Olewe</h1>
+    <h2 data-aos="fade-up">I’m a <span id="typed-text"></span><span class="cursor">|</span></h2>
+    <p data-aos="zoom-in">"Helping others help themselves."</p>
     <nav>
       <ul>
         <li><a href="#about">About Me</a></li>
@@ -23,70 +26,98 @@
   </header>
 
   <main>
-    <section id="about">
+    <section id="about" data-aos="fade-up"></section>
       <h2>About Me</h2>
-      <img src="derrick.jpg" alt="Derrick Olewe" class="profile-pic" />
-      <p>[Hello! I’m Derrick Olewe, a passionate development practitioner, project manager, and tech enthusiast. With a Master’s in International Development from the Hebrew University of Jerusalem, I thrive at the intersection of sustainability, gender equality, technology, and data-driven decision-making.
+      <img src="images/derrick.jpg" alt="Derrick Olewe" class="profile-pic" />
+      <p>[Hello! I’m Derrick Olewe, a development practitioner with a passion for empowering communities and driving social change. With a Master’s degree in International Development from the Hebrew University of Jerusalem, I bring a global perspective to local challenges—especially in sustainability, gender equity, climate change, and inclusive growth.
 
-        My journey so far has been grounded in community empowerment and social impact. I’ve led and contributed to projects like:
+        My journey blends project management, grassroots engagement, and a growing enthusiasm for tech and data-driven solutions. I believe technology is a powerful tool to amplify impact and unlock opportunities—especially across Africa.
         
-        HerStart Innovate the Future – A transformative initiative impacting 10,000 women across Tanzania, Ghana, and Uganda by providing entrepreneurship training, funding opportunities, and mentorship.
+        Beyond work, I’m an adventurer at heart. I find peace in the outdoors—hiking, camping, and connecting with nature. I also love playing and watching football, painting, farming, and building networks with like-minded changemakers.
         
-        BINTI Project – Empowering young mothers and girls affected by early marriages with life skills, financial literacy, reproductive health knowledge, and organic gardening practices.
+        I live by the mantra: "Helping others help themselves." It shapes how I work, lead, and collaborate.
         
-        Urban Farming & Sustainable Agriculture – Driving food security and climate resilience through innovative and sustainable agricultural practices.
         
-        I'm also deeply passionate about how data can inform sporting decisions, and I regularly explore global initiatives in areas like health, conflict resolution, and agricultural transformation—always looking for ways to adapt and improve solutions.
-        
-        When I’m not working or learning, I’m outdoors hiking, camping, or playing and watching football. I also enjoy painting, farming, and networking with fellow changemakers.
-        
-        Right now, I’m excitedly pursuing the Power Learn Project, a Pan-African initiative on a mission to unlock Africa's potential by training 1 million developers. Through accessible tech education, this project empowers young Africans to thrive in the global economy while driving innovation and sustainability—and I’m proud to be a part of it!
-        
-        My mantra? "Helping others help themselves."
         
         ]</p>
     </section>
 
-    <section id="projects">
+    <section id="projects" data-aos="fade-up">
       <h2>Projects</h2>
-      <ul>
-        <li><strong>HerStart Innovate the Future:</strong> Empowering 10,000 women in Africa through social entrepreneurship training and funding.</li>
-        <li><strong>BINTI Project:</strong> Uplifting young mothers with financial independence, SRH education, and gardening skills.</li>
-        <li><strong>Sustainable Agriculture:</strong> Supporting climate-smart farming and food security in communities.</li>
+      <ul class="project-list">
+        <li>
+          <strong>HerStart Innovate the Future:</strong>
+          Empowering 10,000 women in Africa through social entrepreneurship training and funding.
+        </li>
+        <li>
+          <strong>BINTI Project:</strong>
+          Uplifting young mothers with financial independence, SRH education, and gardening skills.
+        </li>
+        <li>
+          <strong>Sustainable Agriculture:</strong>
+          Supporting climate-smart farming and food security in communities.
+        </li>
       </ul>
     </section>
+    
 
-    <section id="rolemodels">
+    <section id="rolemodels" data-aos="fade-up">
       <h2>Role Models</h2>
-      <div class="grid">
-        <figure>
-          <img src="obama.jpg" alt="Barack Obama">
-          <figcaption>Barack Obama</figcaption>
+      <div class="role-grid">
+        <figure class="role-card" data-aos="zoom-in" data-aos-delay="100">
+          <img src="images/obama.jpg" alt="Barack Obama">
+          <figcaption>
+            <strong>Barack Obama</strong><br>
+            “Change will not come if we wait for some other person, or if we wait for some other time. We are the ones we've been waiting for. We are the change that we seek.”
+          </figcaption>
         </figure>
-        <figure>
-          <img src="musk.jpg" alt="Elon Musk">
-          <figcaption>Elon Musk</figcaption>
+        <figure class="role-card" data-aos="zoom-in" data-aos-delay="200">
+          <img src="images/musk.jpg" alt="Elon Musk">
+          <figcaption>
+            <strong>Elon Musk</strong><br>
+            “When something is important enough, you do it even if the odds are not in your favour.”
+          </figcaption>
         </figure>
-        <figure>
-          <img src="ali.jpg" alt="Muhammad Ali">
-          <figcaption>Muhammad Ali</figcaption>
+        <figure class="role-card" data-aos="zoom-in" data-aos-delay="300">
+          <img src="images/ali.jpg" alt="Muhammad Ali">
+          <figcaption>
+            <strong>Muhammad Ali</strong><br>
+            “If my mind can conceive it, and my heart can believe it - then I can achieve it.”
+          </figcaption>
         </figure>
-        <figure>
-          <img src="sankara.jpg" alt="Thomas Sankara">
-          <figcaption>Thomas Sankara</figcaption>
+        <figure class="role-card" data-aos="zoom-in" data-aos-delay="400">
+          <img src="images/sankara.jpg" alt="Thomas Sankara">
+          <figcaption>
+            <strong>Thomas Sankara</strong><br>
+            “You cannot carry out fundamental change without a certain amount of madness.”
+          </figcaption>
         </figure>
       </div>
     </section>
   </main>
 
   <footer id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: derrickolewe@gmail.com</p>
-    <p>Phone: +254 725 553 725</p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/derrick-olewe/">derrick-olewe</a></p>
+    <h2>📞 Contact Me</h2>
+    <p><i class="fas fa-envelope"></i> Email: <a href="mailto:derrickolewe@gmail.com">derrickolewe@gmail.com</a></p>
+    <p><i class="fas fa-phone-alt"></i> Phone: +254 725 553 725</p>
+    <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/derrick-olewe-54236b120/">derrick-olewe</a></p>
+    <p>&copy; 2025 Derrick Olewe. All rights reserved.</p>
+    <div>
+      <a href="https://www.linkedin.com/in/derrick-olewe/" target="_blank">
+        <img src="images/linkedin-icon.png" alt="LinkedIn" width="30" />
+      </a>
+      <a href="mailto:derrickolewe@gmail.com">
+        <img src="images/email-icon.png" alt="Email" width="30" />
+      </a>
+    </div>
   </footer>
 
+  <button id="scrollTopBtn" title="Back to top">↑</button>
   <script src="script.js"></script>
-  <button id="scrollTopBtn" title="Go to top">↑</button>
+  <!-- AOS Script -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
